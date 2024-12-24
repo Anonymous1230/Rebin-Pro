@@ -1,63 +1,99 @@
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    box-sizing: border-box;
 }
 
-.profile-container {
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #203cdb, #9d28d3);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-card {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 350px;
     text-align: center;
-    padding: 20px;
 }
 
 .profile-header {
+    background: linear-gradient(135deg, #0856e6, #9b16bd);
+    padding: 30px 0;
+}
+
+.profile-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+}
+
+.profile-body {
+    padding: 20px;
+}
+
+.name {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    margin: 10px 0;
+}
+
+.location {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
     margin-bottom: 20px;
 }
 
-.profile-photo {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: 2px solid #333;
+.stats {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
 }
 
-.profile-name {
-    font-size: 24px;
-    font-weight: bold;
+.stat {
+    text-align: center;
 }
 
-.profile-bio {
-    font-size: 16px;
-    color: #666;
+.stat h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
 }
 
-.contact-section {
-    margin-top: 20px;
+.stat p {
+    font-size: 12px;
+    color: #777;
 }
 
-.contact-links {
-    list-style: none;
-    padding: 0;
-}
-
-.contact-links li {
-    display: inline;
-    margin: 0 10px;
-}
-
-.contact-links a {
-    text-decoration: none;
-    color: #007BFF;
-}
-
-.contact-links a:hover {
-    text-decoration: underline;
-}
-
-#theme-toggle {
-    margin-top: 20px;
+.btn {
+    display: inline-block;
     padding: 10px 20px;
-    font-size: 16px;
+    background: linear-gradient(135deg, #0f79dd, #ff7eb3);
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 600;
     cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    background: linear-gradient(135deg, #000000, #070606);
+    transform: translateY(-2px);
 }
